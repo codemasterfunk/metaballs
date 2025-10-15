@@ -8,7 +8,9 @@ var blobs = []
 function setup() {
   createCanvas(300, 200);
   colorMode(HSB);
-  for (i = 0; i < 10; i++) blobs.push(new Blob(random(0, width), random(0, height)));
+  for (i = 0; i < 10; i++) {
+    blobs.push(new Blob(random(0, width), random(0, height)));
+  }
 }
 
 function draw() {
